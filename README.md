@@ -1,9 +1,12 @@
-## My GitHub Activity
+## GitHub Contribution Calendar
 
 <p align="center">
   <img
     src="./metrics-isocalendar.svg"
-    alt="GitHub Isometric Commit Calendar"
-    width="100%"
+    alt="Gobinath's GitHub Isometric Contribution Calendar"
   />
+</p>
+
+<p align="center">
+  <i>My coding activity visualized over the past year </i>
 </p>

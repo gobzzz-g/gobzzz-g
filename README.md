@@ -1,9 +1,13 @@
-## My GitHub Activity
+# Hi, I'm Gobinath G
+
+Full-Stack Developer | AI & ML | React | Python
+
+## GitHub Metrics
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/gobzzz-g/gobzzz-g/main/metrics-isocalendar.svg"
-    alt="GitHub Isometric Commit Calendar"
+    src="./github-metrics.svg"
+    alt="Gobinath's GitHub Metrics"
     width="100%"
   />
 </p>

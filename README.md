@@ -1,8 +1,8 @@
 # Hi, I'm Gobinath G
 
-Full-Stack Developer | AI & ML | React | Python
+Full-Stack Developer | AI Agents | React | Python
 
-## GitHub Metrics
+## 📊 GitHub Metrics
 
 <p align="center">
   <img

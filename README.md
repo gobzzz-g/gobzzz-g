@@ -5,24 +5,24 @@
 </h1>
 
 <h3 align="center">
-    Full-Stack Developer | AI & ML Enthusiast | Building AI-driven applications
+    Full-Stack Developer |  Software Development Enthusiast | Building Autonomous Agentic AI Systems | Entrepreneur |
 </h3>
 
 <br/>
 
 <div align="center">
 
-🔭 I’m currently working on **AI-powered applications, multi-agent systems, and scalable web solutions**
+I’m currently working on **AI-powered applications, multi-agent systems, and scalable web solutions**
 
-👯 I’m looking to collaborate on **AI/ML, Full-Stack Development, and innovative open-source projects**
+I’m looking to collaborate on **AI/ML, Full-Stack Development, and innovative open-source projects**
 
-🤝 I’m looking for help with **AI agent orchestration, system architecture, and MLOps**
+I’m looking for help with **AI agent orchestration, system architecture, and MLOps**
 
-🌱 I’m currently learning **Generative AI, LLMs, Agentic AI, and advanced cloud technologies**
+I’m currently learning **Generative AI, LLMs, Agentic AI, and advanced cloud technologies**
 
-💬 Ask me about **React, Python, Full-Stack Development, AI/ML, and AI-driven web applications**
+Ask me about **React, Python, Full-Stack Development, AI/ML, and AI-driven web applications**
 
-⚡ Fun fact: **I enjoy turning complex ideas into working prototypes and experimenting with new AI technologies 🚀**
+Fun fact: **I enjoy turning complex ideas into working prototypes and experimenting with new AI technologies 🚀**
 
 </div>
 

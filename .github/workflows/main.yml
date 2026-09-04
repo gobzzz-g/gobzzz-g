@@ -1,42 +1,36 @@
-name: GitHub Metrics
+name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
-  github-metrics:
+  build:
     runs-on: ubuntu-latest
 
     permissions:
       contents: write
 
     steps:
-      - name: Generate GitHub Metrics
-        uses: lowlighter/metrics@v3.34
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate snake files
+        uses: Platane/snk@v3
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-          user: gobzzz-g
-          filename: github-metrics.svg
-
-          # Base sections
-          base: header, activity, community, repositories
-
-          # Isometric contribution calendar
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
-
-          # Programming languages
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_limit: 8
-
-          # Recently starred repositories
-          plugin_stars: yes
-          plugin_stars_limit: 4
-
-          # Starred topics
-          plugin_topics: yes
-          plugin_topics_limit: 10
+      - name: Publish snake to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          commit_message: Update snake animations

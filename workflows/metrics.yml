@@ -1,0 +1,47 @@
+name: GitHub Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate Metrics
+        uses: lowlighter/metrics@v3.34
+
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Output file
+          filename: metrics.svg
+
+          # Main GitHub information
+          base: header, activity, community, repositories
+
+          # Isometric contribution calendar
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # Languages
+          plugin_languages: yes
+          plugin_languages_sections: recently-used, most-used
+          plugin_languages_limit: 8
+
+          # Coding habits
+          plugin_habits: yes
+          plugin_habits_days: 30
+
+          # Stars
+          plugin_stars: yes
+          plugin_stars_limit: 4
+
+          # Achievements
+          plugin_achievements: yes
+          plugin_achievements_limit: 8

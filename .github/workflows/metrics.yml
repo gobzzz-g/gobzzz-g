@@ -21,19 +21,19 @@ jobs:
           user: gobzzz-g
           filename: github-metrics.svg
 
-          # Full-width two-column layout
+          # Full-width responsive layout
           config_display: columns
 
-          # Put the calendar where it is easy to see
-          config_order: base.header, base.activity+community, languages, isocalendar, base.repositories, repositories, topics
+          # Section order
+          config_order: base.header, base.activity+community, languages, isocalendar, repositories, base.repositories, topics
 
           # Base sections
           base: header, activity, community, repositories
 
-          # Pinned repositories
+          # Your pinned repositories (explicitly listed for reliability)
           plugin_repositories: yes
-          plugin_repositories_pinned: 6
-          plugin_repositories_order: pinned
+          plugin_repositories_featured: gobzzz-g/LoanKit-Ai, gobzzz-g/Audionest, gobzzz-g/Streamlit-Living_Simulator_for_Mars, gobzzz-g/Web-Application-PlayHub, gobzzz-g/Gobinath--Portfolio, gobzzz-g/Policy-Secure
+          plugin_repositories_order: featured
 
           # Contribution calendar
           plugin_isocalendar: yes
@@ -48,7 +48,7 @@ jobs:
           plugin_topics: yes
           plugin_topics_limit: 10
 
-          # Make repository cards use the available column width
+          # Expand repository cards to use the available width
           extras_css: |
             .repository .name {
               width: 100% !important;

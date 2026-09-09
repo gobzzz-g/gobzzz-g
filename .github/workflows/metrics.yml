@@ -30,10 +30,10 @@ jobs:
           # Base sections
           base: header, activity, community, repositories
 
-          # Your pinned repositories (explicitly listed for reliability)
+          # Use the actual GitHub pinned repositories
           plugin_repositories: yes
-          plugin_repositories_featured: gobzzz-g/LoanKit-Ai, gobzzz-g/Audionest, gobzzz-g/Streamlit-Living_Simulator_for_Mars, gobzzz-g/Web-Application-PlayHub, gobzzz-g/Gobinath--Portfolio, gobzzz-g/Policy-Secure
-          plugin_repositories_order: featured
+          plugin_repositories_pinned: 6
+          plugin_repositories_order: pinned
 
           # Contribution calendar
           plugin_isocalendar: yes

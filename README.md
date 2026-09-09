@@ -67,7 +67,7 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 <img
   src="./github-metrics.svg"
   alt="Gobinath's GitHub Metrics"
-  width="55%"
+  width="60%"
 />
 
 </div>

@@ -40,3 +40,8 @@ jobs:
           # Starred topics
           plugin_topics: yes
           plugin_topics_limit: 10
+
+          # 📌 GitHub pinned repositories
+          plugin_repositories: yes
+          plugin_repositories_pinned: 6
+          plugin_repositories_order: pinned

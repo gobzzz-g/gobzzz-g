@@ -56,8 +56,6 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 
 <br/>
 
-
-
 <h2 align="center">GitHub Metrics</h2>
 
 <br/>
@@ -67,7 +65,7 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 <img
   src="./github-metrics.svg"
   alt="Gobinath's GitHub Metrics"
-  width="60%"
+  width="100%"
 />
 
 </div>
@@ -75,6 +73,5 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 <br/>
 
 <hr/>
-
 
 <div align="center">

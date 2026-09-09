@@ -21,8 +21,11 @@ jobs:
           user: gobzzz-g
           filename: github-metrics.svg
 
-          # Layout
+          # Full-width two-column layout
           config_display: columns
+
+          # Put the calendar where it is easy to see
+          config_order: base.header, base.activity+community, languages, isocalendar, base.repositories, repositories, topics
 
           # Base sections
           base: header, activity, community, repositories
@@ -44,3 +47,13 @@ jobs:
           # Starred topics
           plugin_topics: yes
           plugin_topics_limit: 10
+
+          # Make repository cards use the available column width
+          extras_css: |
+            .repository .name {
+              width: 100% !important;
+            }
+            .repository .description {
+              width: calc(100% - 38px) !important;
+              max-width: none !important;
+            }

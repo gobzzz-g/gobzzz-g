@@ -20,7 +20,7 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 
 <div align="center">
 
-  <a href="mailto:gobinath2702@gmail.com">
+  <a href="gobinath2702@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 
@@ -28,7 +28,7 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
 
-  <a href="https://instagram.com/_gobzz__🪐" target="_blank">
+  <a href="https://www.instagram.com/__gobzz_/" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
 

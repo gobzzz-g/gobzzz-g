@@ -21,10 +21,18 @@ jobs:
           user: gobzzz-g
           filename: github-metrics.svg
 
+          # Layout
+          config_display: columns
+
           # Base sections
           base: header, activity, community, repositories
 
-          # Isometric contribution calendar
+          # Pinned repositories
+          plugin_repositories: yes
+          plugin_repositories_pinned: 6
+          plugin_repositories_order: pinned
+
+          # Contribution calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
@@ -33,15 +41,6 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_limit: 8
 
-          # Starred repositories
-          plugin_stars: yes
-          plugin_stars_limit: 4
-
           # Starred topics
           plugin_topics: yes
           plugin_topics_limit: 10
-
-          # 📌 GitHub pinned repositories
-          plugin_repositories: yes
-          plugin_repositories_pinned: 6
-          plugin_repositories_order: pinned

@@ -48,10 +48,21 @@ jobs:
           plugin_topics: yes
           plugin_topics_limit: 10
 
-          # Prevent the isometric calendar graphic from being pushed
-          # behind the previous section in the columns layout.
+          # Keep the isometric calendar fully visible inside the columns layout.
+          # The plugin writes an inline negative margin, so CSS alone cannot reliably override it.
           extras_css: |
-            svg.columns section > svg,
-            svg.columns svg[style*="margin-top: -130px"] {
-              margin-top: 0 !important;
+            svg.columns section > svg {
+              max-width: 100% !important;
+              height: auto !important;
             }
+
+          extras_js: |
+            document.querySelectorAll('svg[style*="margin-top: -130px"]').forEach((calendar) => {
+              calendar.style.marginTop = '0px';
+              calendar.style.maxWidth = '100%';
+              calendar.style.width = '100%';
+              calendar.style.height = 'auto';
+            });
+
+          # Add enough vertical room so the calendar cannot be cropped.
+          config_padding: 0, 80

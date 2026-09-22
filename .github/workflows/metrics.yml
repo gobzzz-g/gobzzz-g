@@ -22,22 +22,13 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
-      - name: Fix calendar positioning
-        run: |
-          sed -i 's/style="margin-top: -130px;"/style="margin-top: 0;"/' github-metrics.svg
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add github-metrics.svg
-          git diff --cached --quiet || git commit -m "fix: restore visible contribution calendar"
-          git push
-
           user: gobzzz-g
           filename: github-metrics.svg
 
-          # Full-width responsive layout
+          # Full-width two-column layout
           config_display: columns
 
-          # Section order — repositories removed
+          # Keep repositories out of the dashboard
           config_order: base.header, base.activity+community, languages, isocalendar, topics
 
           # Base sections
@@ -55,3 +46,10 @@ jobs:
           # Starred topics
           plugin_topics: yes
           plugin_topics_limit: 10
+
+          # Prevent the isometric calendar graphic from being pushed
+          # behind the previous section in the columns layout.
+          extras_css: |
+            svg.columns section > svg {
+              margin-top: 0 !important;
+            }

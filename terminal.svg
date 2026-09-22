@@ -1,47 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="315" viewBox="0 0 760 427" role="img" aria-label="Gobinath developer terminal">
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="315" viewBox="0 0 760 427" role="img" aria-label="Gobinath animated Mac terminal">
   <defs>
-    <clipPath id="screen"><rect x="1" y="1" width="758" height="425" rx="12"/></clipPath>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f8f8"/>
+      <stop offset="0.45" stop-color="#d9d9d9"/>
+      <stop offset="1" stop-color="#a9a9a9"/>
+    </linearGradient>
+    <linearGradient id="innerChrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#bdbdbd"/>
+    </linearGradient>
+
+    <clipPath id="window">
+      <rect x="1" y="1" width="758" height="425" rx="12"/>
+    </clipPath>
+
+    <clipPath id="type1"><rect x="28" y="63" width="0" height="24"><animate attributeName="width" values="0;650;650;0" keyTimes="0;.18;.82;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="type2"><rect x="28" y="121" width="0" height="24"><animate attributeName="width" values="0;650;650;0" keyTimes="0;.18;.82;1" dur="12s" begin="1.9s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="type3"><rect x="28" y="179" width="0" height="24"><animate attributeName="width" values="0;650;650;0" keyTimes="0;.18;.82;1" dur="12s" begin="3.8s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="type4"><rect x="28" y="237" width="0" height="24"><animate attributeName="width" values="0;650;650;0" keyTimes="0;.18;.82;1" dur="12s" begin="5.7s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="type5"><rect x="28" y="295" width="0" height="24"><animate attributeName="width" values="0;650;650;0" keyTimes="0;.18;.82;1" dur="12s" begin="7.6s" repeatCount="indefinite"/></rect></clipPath>
+
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
-      .cmd{font-size:17px;fill:#f5f5f5}.out{font-size:16px;fill:#b7c0ca}
-      .prompt{fill:#55d187}.accent{fill:#7dcfff}
-      .t1,.t2,.t3,.t4,.t5{opacity:0}
-      .t1{animation:show 12s steps(1,end) infinite}.t2{animation:show 12s steps(1,end) 1.8s infinite}
-      .t3{animation:show 12s steps(1,end) 3.6s infinite}.t4{animation:show 12s steps(1,end) 5.4s infinite}
-      .t5{animation:show 12s steps(1,end) 7.2s infinite}.cursor{animation:blink .8s steps(1,end) infinite}
-      @keyframes show{0%,14%{opacity:0}15%,95%{opacity:1}96%,100%{opacity:0}}
+      .cmd{font-size:17px;fill:#f4f4f4}
+      .out{font-size:16px;fill:#c4cbd2}
+      .prompt{fill:#4fe38a}
+      .accent{fill:#79c7ff}
+      .answer{opacity:0;animation:appear 12s linear infinite}
+      .a1{animation-delay:1.45s}.a2{animation-delay:3.35s}.a3{animation-delay:5.25s}
+      .a4{animation-delay:7.15s}.a5{animation-delay:9.05s}
+      .cursor{animation:blink .75s steps(1,end) infinite}
+      @keyframes appear{0%,10%{opacity:0}14%,82%{opacity:1}88%,100%{opacity:0}}
       @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-      @media (prefers-reduced-motion:reduce){.t1,.t2,.t3,.t4,.t5,.cursor{animation:none;opacity:1}}
+      @media (prefers-reduced-motion:reduce){
+        .answer{animation:none;opacity:1}
+        .cursor{animation:none;opacity:1}
+      }
     </style>
   </defs>
 
-  <rect width="760" height="427" rx="12" fill="#0d1117" stroke="#30363d"/>
-  <g clip-path="url(#screen)">
-    <rect width="760" height="48" fill="#161b22"/>
-    <circle cx="24" cy="24" r="7" fill="#ff5f57"/>
-    <circle cx="48" cy="24" r="7" fill="#febc2e"/>
-    <circle cx="72" cy="24" r="7" fill="#28c840"/>
-    <text x="380" y="30" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">~/gobzzz-g</text>
+  <!-- Silver Mac-style outer frame -->
+  <rect x="0.75" y="0.75" width="758.5" height="425.5" rx="13" fill="url(#chrome)" stroke="#8c8c8c" stroke-width="1.5"/>
+  <rect x="4" y="4" width="752" height="419" rx="10" fill="#111111" stroke="url(#innerChrome)" stroke-width="1"/>
+
+  <g clip-path="url(#window)">
+    <!-- Mac silver title bar -->
+    <rect x="4" y="4" width="752" height="48" fill="url(#chrome)"/>
+    <rect x="4" y="51" width="752" height="1" fill="#8e8e8e"/>
+
+    <!-- Traffic lights -->
+    <circle cx="27" cy="28" r="7.5" fill="#ff5f57" stroke="#d84b45" stroke-width="1"/>
+    <circle cx="51" cy="28" r="7.5" fill="#ffbd2e" stroke="#d69b19" stroke-width="1"/>
+    <circle cx="75" cy="28" r="7.5" fill="#28c840" stroke="#1d9d31" stroke-width="1"/>
+
+    <text x="380" y="33" text-anchor="middle" class="mono" font-size="14" fill="#4b4b4b">gobinath — zsh</text>
+
+    <!-- Terminal body -->
+    <rect x="4" y="52" width="752" height="371" fill="#0b0d0f"/>
 
     <g class="mono">
-      <text x="28" y="82" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>whoami</tspan></text>
-      <text x="28" y="108" class="out t1">Gobinath G — Full Stack Developer</text>
+      <!-- 1 -->
+      <g clip-path="url(#type1)">
+        <text x="28" y="81" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#929aa3"> ~ % </tspan><tspan>whoami</tspan></text>
+      </g>
+      <text x="28" y="107" class="out answer a1">Gobinath G — Full Stack Developer</text>
 
-      <text x="28" y="140" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>cat skills.txt</tspan></text>
-      <text x="28" y="166" class="out t2"><tspan class="accent">React</tspan> · <tspan class="accent">Python</tspan> · <tspan class="accent">Node.js</tspan> · <tspan class="accent">AI Agents</tspan></text>
+      <!-- 2 -->
+      <g clip-path="url(#type2)">
+        <text x="28" y="139" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#929aa3"> ~ % </tspan><tspan>cat skills.txt</tspan></text>
+      </g>
+      <text x="28" y="165" class="out answer a2"><tspan class="accent">React</tspan> · <tspan class="accent">Python</tspan> · <tspan class="accent">Node.js</tspan> · <tspan class="accent">AI Agents</tspan></text>
 
-      <text x="28" y="198" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>cat focus.txt</tspan></text>
-      <text x="28" y="224" class="out t3">Building AI-powered apps &amp; agentic workflows</text>
+      <!-- 3 -->
+      <g clip-path="url(#type3)">
+        <text x="28" y="197" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#929aa3"> ~ % </tspan><tspan>cat focus.txt</tspan></text>
+      </g>
+      <text x="28" y="223" class="out answer a3">Building AI-powered apps &amp; agentic workflows</text>
 
-      <text x="28" y="256" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>git status</tspan></text>
-      <text x="28" y="282" class="out t4"><tspan class="prompt">●</tspan> ready to build something useful</text>
+      <!-- 4 -->
+      <g clip-path="url(#type4)">
+        <text x="28" y="255" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#929aa3"> ~ % </tspan><tspan>git status</tspan></text>
+      </g>
+      <text x="28" y="281" class="out answer a4"><tspan class="prompt">●</tspan> ready to build something useful</text>
 
-      <text x="28" y="314" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>npm run create</tspan><tspan class="cursor" fill="#55d187">▋</tspan></text>
-      <text x="28" y="342" class="out t5"><tspan class="prompt">✓</tspan> turning ideas into working prototypes...</text>
+      <!-- 5 -->
+      <g clip-path="url(#type5)">
+        <text x="28" y="313" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#929aa3"> ~ % </tspan><tspan>npm run create</tspan></text>
+      </g>
+      <text x="28" y="339" class="out answer a5"><tspan class="prompt">✓</tspan> turning ideas into working prototypes...</text>
 
-      <text x="28" y="382" class="out" fill="#8b949e">~/gobzzz-g</text>
-      <text x="28" y="408" class="out"><tspan class="prompt">➜</tspan> ready for the next build.</text>
+      <text x="28" y="375" class="out" fill="#7f8790">~/gobzzz-g</text>
+      <text x="28" y="401" class="out"><tspan class="prompt">➜</tspan> <tspan>ready for the next build.</tspan><tspan class="cursor" fill="#4fe38a">▋</tspan></text>
     </g>
   </g>
 </svg>

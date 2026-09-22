@@ -10,7 +10,7 @@
 
 I’m currently working on **AI-powered applications, Multi-agent systems, and AI agent orchestration**
 
-Ask me about **React, Python, Full-Stack Development, AI/ML, and AI-driven web applications**
+Ask me about **React, Python, Full-Stack Development, and AI-driven web applications**
 
 Fun fact: **I enjoy turning complex ideas into working prototypes and experimenting with new AI technologies**
 

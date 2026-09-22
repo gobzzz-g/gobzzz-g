@@ -36,7 +36,7 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 
 <hr/>
 
-<h2 align="left">About Me 🌟</h2>
+<h2 align="left">About Me </h2>
 
 <table>
 <tr>
@@ -45,11 +45,11 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 <p>I’m a <strong>Full Stack Developer</strong> focused on building modern web applications and <strong>AI-powered solutions</strong>.</p>
 
 <ul>
-<li>🚀 Working with <strong>React, Python, Node.js, and AI agents</strong></li>
-<li>🤖 Exploring <strong>multi-agent systems and agent orchestration</strong></li>
-<li>🛠️ Turning complex ideas into <strong>working prototypes</strong></li>
-<li>🎨 Interested in <strong>UI/UX, full-stack development, and developer tools</strong></li>
-<li>🌱 Always learning and experimenting with <strong>new technologies</strong></li>
+<li> Working with <strong>React, Python, Node.js, and AI agents</strong></li>
+<li> Exploring <strong>multi-agent systems and agent orchestration</strong></li>
+<li> Turning complex ideas into <strong>working prototypes</strong></li>
+<li> Interested in <strong>UI/UX, full-stack development, and developer tools</strong></li>
+<li> Always learning and experimenting with <strong>new technologies</strong></li>
 </ul>
 
 </td>

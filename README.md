@@ -34,6 +34,19 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 
 </div>
 
+<br/>
+
+<!-- Mac-style animated terminal -->
+<div align="center">
+  <img
+    src="./terminal.svg?v=20260922"
+    alt="Gobinath Mac Terminal"
+    width="760"
+  />
+</div>
+
+<br/>
+
 <hr/>
 
 <h2 align="center"> Languages • Frameworks • Tools </h2>

@@ -25,10 +25,15 @@ jobs:
           config_display: columns
 
           # Keep repositories out of the dashboard
-          config_order: base.header, base.activity+community, languages, isocalendar, topics
+          config_order: base.header, base.activity+community, languages, isocalendar, repositories, topics
 
           # Base sections
           base: header, activity, community
+
+          # Featured repositories — use the six repositories pinned on your GitHub profile
+          plugin_repositories: yes
+          plugin_repositories_pinned: 6
+          plugin_repositories_order: pinned
 
           # Contribution calendar
           plugin_isocalendar: yes

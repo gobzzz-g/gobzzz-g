@@ -34,16 +34,30 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 
 </div>
 
-<br/>
+<hr/>
 
-<!-- Mac-style animated terminal -->
-<div align="center">
-  <img
-    src="./terminal.svg?v=20260922"
-    alt="Gobinath Mac Terminal"
-    width="760"
-  />
-</div>
+<h2 align="left">About Me 🌟</h2>
+
+<table>
+  <tr>
+    <td width="48%" valign="top">
+
+I’m a **Full Stack Developer** focused on building modern web applications and **AI-powered solutions**.
+
+- 🚀 Working with **React, Python, Node.js, and AI agents**
+- 🤖 Exploring **multi-agent systems and agent orchestration**
+- 🛠️ Turning complex ideas into **working prototypes**
+- 🎨 Interested in **UI/UX, full-stack development, and developer tools**
+- 🌱 Always learning and experimenting with **new technologies**
+
+    </td>
+    <td width="52%" valign="top" align="center">
+
+<img src="./terminal.svg?v=20260922-about" alt="Gobinath Mac Terminal" width="560" />
+
+    </td>
+  </tr>
+</table>
 
 <br/>
 

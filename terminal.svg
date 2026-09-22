@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="390" viewBox="0 0 760 390" role="img" aria-label="Gobinath developer terminal">
+  <defs>
+    <clipPath id="screen"><rect x="1" y="1" width="758" height="389" rx="12"/></clipPath>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+      .cmd{font-size:18px;fill:#f5f5f5}.out{font-size:17px;fill:#b7c0ca}
+      .prompt{fill:#55d187}.accent{fill:#7dcfff}
+      .typing{opacity:0}.t1{animation:show 12s steps(1,end) infinite}.t2{animation:show 12s steps(1,end) 1.8s infinite}
+      .t3{animation:show 12s steps(1,end) 3.6s infinite}.t4{animation:show 12s steps(1,end) 5.4s infinite}
+      .t5{animation:show 12s steps(1,end) 7.2s infinite}.cursor{animation:blink .8s steps(1,end) infinite}
+      @keyframes show{0%,14%{opacity:0}15%,95%{opacity:1}96%,100%{opacity:0}}
+      @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+      @media (prefers-reduced-motion:reduce){.typing,.cursor{animation:none;opacity:1}}
+    </style>
+  </defs>
+  <rect width="760" height="390" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <g clip-path="url(#screen)">
+    <rect width="760" height="48" fill="#161b22"/>
+    <circle cx="24" cy="24" r="7" fill="#ff5f57"/><circle cx="48" cy="24" r="7" fill="#febc2e"/><circle cx="72" cy="24" r="7" fill="#28c840"/>
+    <text x="380" y="30" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">gobinath — zsh</text>
+    <g class="mono">
+      <text x="28" y="82" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>whoami</tspan></text>
+      <text x="28" y="108" class="out t1">Gobinath G — Full Stack Developer</text>
+      <text x="28" y="142" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>cat skills.txt</tspan></text>
+      <text x="28" y="168" class="out t2"><tspan class="accent">React</tspan> · <tspan class="accent">Python</tspan> · <tspan class="accent">Node.js</tspan> · <tspan class="accent">AI Agents</tspan></text>
+      <text x="28" y="202" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>cat focus.txt</tspan></text>
+      <text x="28" y="228" class="out t3">Building AI-powered applications &amp; agentic workflows</text>
+      <text x="28" y="262" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>git status</tspan></text>
+      <text x="28" y="288" class="out t4"><tspan class="prompt">●</tspan> ready to build something useful</text>
+      <text x="28" y="322" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#8b949e"> ~ % </tspan><tspan>npm run create</tspan><tspan class="cursor" fill="#55d187">▋</tspan></text>
+      <text x="28" y="350" class="out t5"><tspan class="prompt">✓</tspan> turning ideas into working prototypes...</text>
+    </g>
+  </g>
+</svg>

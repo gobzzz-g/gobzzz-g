@@ -28,7 +28,7 @@ jobs:
           config_display: columns
 
           # Keep repositories out of the dashboard
-          config_order: base.header, base.activity+community, languages, isocalendar, lines, repositories, topics
+          config_order: base.header, base.activity+community, languages, lines, isocalendar, repositories, topics
 
           # Base sections
           base: header, activity, community

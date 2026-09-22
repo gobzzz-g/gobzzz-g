@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/metrics.yml"
 
 jobs:
   github-metrics:
@@ -25,7 +28,7 @@ jobs:
           config_display: columns
 
           # Keep repositories out of the dashboard
-          config_order: base.header, base.activity+community, languages, isocalendar, repositories, topics
+          config_order: base.header, base.activity+community, languages, isocalendar, code, repositories, topics
 
           # Base sections
           base: header, activity, community
@@ -43,6 +46,12 @@ jobs:
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_limit: 8
+
+          # Developer code snapshot — fills the open space beside the calendar
+          plugin_code: yes
+          plugin_code_lines: 8
+          plugin_code_load: 300
+          plugin_code_languages: javascript,typescript,python
 
           # Starred topics
           plugin_topics: yes

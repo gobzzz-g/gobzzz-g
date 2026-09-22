@@ -62,7 +62,7 @@
     <g class="mono">
       <!-- 1 -->
       <g clip-path="url(#type1)">
-        <text x="28" y="81" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#929aa3"> ~ % </tspan><tspan>whoami</tspan></text>
+        <text x="28" y="81" class="cmd"><tspan class="prompt">gobinath@dev</tspan><tspan fill="#929aa3"> ~ % </tspan><tspan>who am I</tspan></text>
       </g>
       <text x="28" y="107" class="out answer a1">Gobinath G — Full Stack Developer</text>
 

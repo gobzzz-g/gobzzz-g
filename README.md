@@ -63,7 +63,7 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 <div align="center">
 
 <img
-  src="./github-metrics.svg?v=20260922"
+  src="./github-metrics.svg?v=20260922-calendar"
   alt="Gobinath's GitHub Metrics"
   width="100%"
 />

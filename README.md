@@ -39,24 +39,26 @@ Fun fact: **I enjoy turning complex ideas into working prototypes and experiment
 <h2 align="left">About Me 🌟</h2>
 
 <table>
-  <tr>
-    <td width="48%" valign="top">
+<tr>
+<td width="48%" valign="top">
 
-I’m a **Full Stack Developer** focused on building modern web applications and **AI-powered solutions**.
+<p>I’m a <strong>Full Stack Developer</strong> focused on building modern web applications and <strong>AI-powered solutions</strong>.</p>
 
-- 🚀 Working with **React, Python, Node.js, and AI agents**
-- 🤖 Exploring **multi-agent systems and agent orchestration**
-- 🛠️ Turning complex ideas into **working prototypes**
-- 🎨 Interested in **UI/UX, full-stack development, and developer tools**
-- 🌱 Always learning and experimenting with **new technologies**
+<ul>
+<li>🚀 Working with <strong>React, Python, Node.js, and AI agents</strong></li>
+<li>🤖 Exploring <strong>multi-agent systems and agent orchestration</strong></li>
+<li>🛠️ Turning complex ideas into <strong>working prototypes</strong></li>
+<li>🎨 Interested in <strong>UI/UX, full-stack development, and developer tools</strong></li>
+<li>🌱 Always learning and experimenting with <strong>new technologies</strong></li>
+</ul>
 
-    </td>
-    <td width="52%" valign="top" align="center">
+</td>
+<td width="52%" valign="top" align="center">
 
-<img src="./terminal.svg?v=20260922-about" alt="Gobinath Mac Terminal" width="560" />
+<img src="./terminal.svg?v=20260922-about2" alt="Gobinath Mac Terminal" width="560" />
 
-    </td>
-  </tr>
+</td>
+</tr>
 </table>
 
 <br/>

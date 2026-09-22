@@ -51,6 +51,7 @@ jobs:
           # Prevent the isometric calendar graphic from being pushed
           # behind the previous section in the columns layout.
           extras_css: |
-            svg.columns section > svg {
+            svg.columns section > svg,
+            svg.columns svg[style*="margin-top: -130px"] {
               margin-top: 0 !important;
             }

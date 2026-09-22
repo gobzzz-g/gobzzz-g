@@ -1,6 +1,9 @@
 name: GitHub Metrics
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
@@ -24,16 +27,11 @@ jobs:
           # Full-width responsive layout
           config_display: columns
 
-          # Section order
-          config_order: base.header, base.activity+community, languages, isocalendar, repositories, base.repositories, topics
+          # Section order — repositories removed
+          config_order: base.header, base.activity+community, languages, isocalendar, topics
 
           # Base sections
-          base: header, activity, community, repositories
-
-          # Use the actual GitHub pinned repositories
-          plugin_repositories: yes
-          plugin_repositories_pinned: 6
-          plugin_repositories_order: pinned
+          base: header, activity, community
 
           # Contribution calendar
           plugin_isocalendar: yes
@@ -47,13 +45,3 @@ jobs:
           # Starred topics
           plugin_topics: yes
           plugin_topics_limit: 10
-
-          # Expand repository cards to use the available width
-          extras_css: |
-            .repository .name {
-              width: 100% !important;
-            }
-            .repository .description {
-              width: calc(100% - 38px) !important;
-              max-width: none !important;
-            }
